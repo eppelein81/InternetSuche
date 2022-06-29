@@ -1,0 +1,43 @@
+form {
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input, Button {
+    background-color: #000000;
+    color: #00ff00;
+    padding: 8px;
+    margin: 8px;    
+    border: 2px solid #ffffff;
+    transition: all 225ms ease-in-out;
+    outline: none;
+}
+input {
+    width: 60vw;;
+}
+::placeholder {
+    color: #00ff00;
+    font-style: italic;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+input:hover, Button:hover {
+    color: #ffffff;
+    border: 2px solid #00ff00;
+    transition: all 225ms ease-in-out;
+}
+input:focus, .af Button:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #00ff00;
+    transition: all 225ms ease-in-out;
+}
+input:hover::placeholder, Button:hover::placeholder {
+    color: #ffffff;
+}
+input:focus::placeholder, Button:focus::placeholder {
+    color: #000000;
+}
